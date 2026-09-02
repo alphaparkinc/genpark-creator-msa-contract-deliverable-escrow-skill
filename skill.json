@@ -1,0 +1,42 @@
+{
+  "name": "genpark-creator-msa-contract-deliverable-escrow-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Creator master service agreement (MSA) contract and milestone deliverable escrow managing legal rights transfer and milestone release.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "influencer-legal",
+  "tags": [
+    "creator-contracts",
+    "msa-agreement",
+    "milestone-escrow",
+    "deliverable-verification",
+    "rights-assignment"
+  ],
+  "inputs": {
+    "creator_id": {
+      "type": "string"
+    },
+    "total_contract_value_usd": {
+      "type": "number"
+    },
+    "agreed_deliverables": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "contract_escrow_id": {
+      "type": "string"
+    },
+    "contract_status": {
+      "type": "string"
+    },
+    "escrowed_amount_usd": {
+      "type": "number"
+    },
+    "smart_contract_escrow_dossier_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
